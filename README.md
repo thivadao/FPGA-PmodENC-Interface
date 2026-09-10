@@ -22,14 +22,15 @@ The project includes synchronization, debouncing, polling and interrupt function
 
 ## System Concept
 
-The PmodENC provides two encoder signals, **A** and **B**.  
+The PmodENC provides two encoder signals, **A** and **B**.
+
 The phase relationship between these two signals is evaluated to determine the direction of rotation.
 
-### Clockwise rotation
+### Clockwise Rotation
 
 `11 → 01 → 00 → 10 → 11`
 
-### Counter-clockwise rotation
+### Counter-clockwise Rotation
 
 `11 → 10 → 00 → 01 → 11`
 
@@ -37,13 +38,13 @@ The phase relationship between these two signals is evaluated to determine the d
 
 The block diagram shows the main functional structure of the system and the signal flow between the PmodENC and the FPGA component.
 
-![Block Diagram](images/blockdiagram.png)
+![Block Diagram](images/Blockschaltbild.png)
 
 ## State Machine
 
 A state-machine-based concept is used to evaluate the encoder signals and determine the direction of rotation.
 
-![State Machine](images/state-machine.png)
+![State Machine](images/Zustandsdiagramm.png)
 
 ## Register Interface
 
@@ -105,5 +106,6 @@ Hochschule Osnabrück
 
 ## Note
 
-The source code is not included in this repository.  
+The source code is not included in this repository.
+
 This repository is intended as a technical documentation and portfolio overview of the project.
